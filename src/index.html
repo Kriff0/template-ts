@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>David's Typescript Clock</title>
+        
+        <style>
+            
+            body {
+            background-color: rgb(78, 76, 68);    
+            font-family: 'Lato';
+            margin-top: 300px;
+            text-align: center;
+            color: ivory;
+            }
 
-<head>
-    <meta charset="utf-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <!-- support for mobile touch devices -->
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-</head>
-<body>
-    <h1>Title</h1>
-</body>
-</html>
+            #hours {
+            font-weight: 300;
+            font-size: 200px;
+            margin-top: 50px;
+            line-height: 60px;
+            font-weight: bold;
+            }
+
+            #minutes {
+            font-weight: 300;
+            font-size: 200px;
+            margin-top: 70px;
+            line-height: 60px;
+            font-weight: bold;
+            }
+
+            #seconds {
+            font-weight: 300;
+            font-size: 200px;
+            margin-top: 90px;
+            line-height: 60px;
+            font-weight: bold;
+            }
+            
+            #button_mode {
+            margin-top: 10px;
+            line-height: 60px;
+            font-weight: bold;
+            color: ivory;
+            padding: 0 30px;
+            background: #3373ff;
+            border: 5px #3373ff;
+            border-radius: 15px;
+            cursor : pointer;    
+            }
+ 
+            #button_increase {
+            margin-top: 10px;
+            line-height: 60px;
+            font-weight: bold;
+            color: ivory;
+            padding: 0 30px;
+            background: #e21347;
+            border: 5px #e21347;
+            border-radius: 15px;
+            cursor : pointer;    
+            }
+
+            #button_light {
+            margin-top: 10px;
+            line-height: 60px;
+            font-weight: bold;
+            color: ivory;
+            padding: 0 30px;
+            background: #85da4c;
+            border: 5px #85da4c;
+            border-radius: 15px;  
+            cursor : pointer;  
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+      <h1 id="hours"></h1>
+      <h1 id="minutes"></h1>
+      <h1 id="seconds"></h1>
+      <button id="button_mode">Mode</button>
+      <button id="button_increase">Increase</button>   
+      <button id="button_light">Light</button>     
+      <script src="index.js"></script>
+        
+    </body>
+    </html>
